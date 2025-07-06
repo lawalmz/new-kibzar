@@ -1,6 +1,6 @@
 import { Facebook, Twitter, Instagram } from 'lucide-react';
 import React from 'react';
-import { Link } from "react-router-dom";
+
 
 export default function Footer() {
   return (
@@ -10,10 +10,10 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-semibold mb-4">About Kibzar</h3>
             <ul className="space-y-2 text-sm md:text-base">
-              <li><a to="/AboutUs" className="hover:underline">About Us</a></li>
-              <li><a to="/ContactUs" className="hover:underline">Contact Us </a></li>
-              <li><a to="/TermsAndCondition" className="hover:underline">Terms & Condition</a></li>
-              <li><a to="/Privacy-policy" className="hover:underline">Privacy Policy</a></li>
+              <li><a href="/AboutUs" className="hover:underline">About Us</a></li>
+              <li><a href="/ContactUs" className="hover:underline">Contact Us </a></li>
+              <li><a href="/TermsAndCondition" className="hover:underline">Terms & Condition</a></li>
+              <li><a href="/Privacy-policy" className="hover:underline">Privacy Policy</a></li>
             </ul>
           </div>
           <div>
