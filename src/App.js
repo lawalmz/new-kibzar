@@ -173,10 +173,10 @@ const App = () => {
           <Route path="/chats" element={<ProtectedRoute element={<ChatListPage />} />} />
           <Route path="/my-ads" element={<ProtectedRoute element={<MyAds />} />} /> {/* Add MyAds route */}
           <Route path="/profile/:userId" element={<PublicProfile />} /> {/* Add PublicProfile route */}
-           <Route path="/privacy-policy" element={<ProtectedRoute element={<PrivacyPolicy />} />} />
-           <Route path="/TermsAndCondition" element={<ProtectedRoute element={<TermsAndCondition />} />} />
-          <Route path="/ContactUs" element={<ProtectedRoute element={<ContactUs/>} />}  />
-          <Route path="/AboutUs" element={<ProtectedRoute element={<AboutUs/>} />}  />
+           <Route path="/privacy-policy"  element={<PrivacyPolicy />}  />
+           <Route path="/TermsAndCondition"  element={<TermsAndCondition />}  />
+          <Route path="/ContactUs"  element={<ContactUs/>}   />
+          <Route path="/AboutUs"  element={<AboutUs/>}   />
         </Routes>
       </Router>
     </UserContext.Provider>

@@ -1,5 +1,6 @@
 import { Facebook, Twitter, Instagram } from 'lucide-react';
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 
 export default function Footer() {
@@ -10,8 +11,11 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-semibold mb-4">About Kibzar</h3>
             <ul className="space-y-2 text-sm md:text-base">
-              <li><a href="/AboutUs" className="hover:underline">About Us</a></li>
-              <li><a href="/ContactUs" className="hover:underline">Contact Us </a></li>
+              <li>
+                <Link to="/AboutUs" className="hover:underline">
+                  About Us
+                </Link>
+              </li>              <li><a href="/ContactUs" className="hover:underline">Contact Us </a></li>
               <li><a href="/TermsAndCondition" className="hover:underline">Terms & Condition</a></li>
               <li><a href="/Privacy-policy" className="hover:underline">Privacy Policy</a></li>
             </ul>
@@ -43,7 +47,7 @@ export default function Footer() {
         </div>
         <div className="text-xs text-gray-600 mt-4 text-center">
           Built by Muazu Lawal Lawal & Aimen Alamin
- 
+
         </div>
         <div className="mt-8 text-center text-xs md:text-sm">
           © {new Date().getFullYear()} Kibzar North Cyprus. All rights reserved.
