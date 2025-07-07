@@ -1,9 +1,12 @@
 import { Facebook, Twitter, Instagram } from 'lucide-react';
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link,  useNavigate } from 'react-router-dom';
 
 
 export default function Footer() {
+  const navigate = useNavigate();
+
+  
   return (
     <footer className="bg-gray-300 text-black">
       <div className="container mx-auto px-4 py-8">
@@ -12,12 +15,56 @@ export default function Footer() {
             <h3 className="text-lg font-semibold mb-4">About Kibzar</h3>
             <ul className="space-y-2 text-sm md:text-base">
               <li>
-                <Link to="/AboutUs" className="hover:underline">
-                  About Us
-                </Link>
-              </li>              <li><a href="/ContactUs" className="hover:underline">Contact Us </a></li>
-              <li><a href="/TermsAndCondition" className="hover:underline">Terms & Condition</a></li>
-              <li><a href="/Privacy-policy" className="hover:underline">Privacy Policy</a></li>
+                <a>
+                  <button
+                    className="hover:text-gray-800 border-b-2 border-transparent hover:border-red-500"
+                    onClick={() => {
+                      window.scrollTo(0, 0);
+                      navigate(`/AboutUs`);
+                    }}
+                  >
+                    About Us
+                  </button>
+                </a>
+              </li>            <li>
+                <a>
+                  <button
+                    className="hover:text-gray-800 border-b-2 border-transparent hover:border-red-500"
+                    onClick={() => {
+                      window.scrollTo(0, 0);
+                      navigate(`/ContactUs`);
+                    }}
+                  >
+                    Contact Us
+                  </button>
+                </a>
+              </li>
+             <li>
+                <a>
+                  <button
+                    className="hover:text-gray-800 border-b-2 border-transparent hover:border-red-500"
+                    onClick={() => {
+                      window.scrollTo(0, 0);
+                      navigate(`/TermsAndCondition`);
+                    }}
+                  >
+                    Terms & Conditions
+                  </button>
+                </a>
+              </li>
+              <li>
+                <a>
+                  <button
+                    className="hover:text-gray-800 border-b-2 border-transparent hover:border-red-500"
+                    onClick={() => {
+                      window.scrollTo(0, 0);
+                      navigate(`/Privacy-policy`);
+                    }}
+                  >
+                    Privacy Policy
+                  </button>
+                </a>
+              </li>
             </ul>
           </div>
           <div>
