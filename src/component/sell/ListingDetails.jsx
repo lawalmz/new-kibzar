@@ -138,26 +138,35 @@ function ListingDetails() {
                 Name: <span className="text-gray-900">{listing.sellerName}</span>
               </p>
 
-              <button
-                className="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600 w-full mb-2"
-                onClick={() => window.location.href = `tel:${listing.phoneNumber}`}
-              >
-                Call
-              </button>
-              <button
-                className="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 w-full mb-2"
-                onClick={() => window.open(`https://wa.me/${listing.phoneNumber}`, '_blank', 'noopener,noreferrer')}
-              >
-                WhatsApp
-              </button>
+              {/* Show phone options if contactMethod is 'Phone' or 'Both' */}
+              {(listing.contactMethod === 'Phone' || listing.contactMethod === 'Both') && (
+                <>
+                  <button
+                    className="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600 w-full mb-2"
+                    onClick={() => window.location.href = `tel:${listing.phoneNumber}`}
+                  >
+                    Call
+                  </button>
+                  <button
+                    className="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 w-full mb-2"
+                    onClick={() => window.open(`https://wa.me/${listing.phoneNumber}`, '_blank', 'noopener,noreferrer')}
+                  >
+                    WhatsApp
+                  </button>
+                </>
+              )}
 
-              <button
-                className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 w-full"
-                onClick={handleChatClick}
-              >
-                Chat
-              </button>
+              {/* Show chat option if contactMethod is 'Chat' or 'Both' */}
+              {(listing.contactMethod === 'Chat' || listing.contactMethod === 'Both') && (
+                <button
+                  className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 w-full"
+                  onClick={handleChatClick}
+                >
+                  Chat
+                </button>
+              )}
             </div>
+
           </div>
         </div>
 
