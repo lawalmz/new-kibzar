@@ -42,7 +42,7 @@ export default function AboutUs  ()  {
 
         {/* Friend */}
         <a
-          href="https://www.instagram.com/aimenn009?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" // Replace with actual social link
+          href="https://www.linkedin.com/in/aimenalamin/" // Replace with actual social link
           target="_blank"
           rel="noopener noreferrer"
           className="text-center bg-white shadow-md rounded-lg p-6 transform transition-transform hover:scale-105 hover:shadow-lg"
