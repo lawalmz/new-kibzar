@@ -86,7 +86,7 @@ export default function Footer() {
               <a href="#" className="hover:text-red-400">
                 <Twitter size={24} />
               </a>
-              <a href="#" className="hover:text-red-400">
+              <a href="https://www.instagram.com/kibzar_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" className="hover:text-red-400">
                 <Instagram size={24} />
               </a>
             </div>
