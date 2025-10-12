@@ -104,3 +104,8 @@ const App = () => {
 };
 
 export default App;
+
+
+
+// added google search verification file in public folder
+//public/googleXXXXXX.html
