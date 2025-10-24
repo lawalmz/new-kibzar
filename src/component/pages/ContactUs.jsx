@@ -50,9 +50,6 @@ export default function ContactUs() {
         </p>
       )}
 
-      <p className="text-gray-400 mt-10 text-sm text-center italic">
-        Website and app built by <strong>Lawal Muazu Lawal</strong> and <strong> Aimen Alamin</strong>.
-      </p>
     </div>
   );
 };

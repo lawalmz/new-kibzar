@@ -1,12 +1,12 @@
 import { Facebook, Twitter, Instagram } from 'lucide-react';
 import React from 'react';
-import { Link,  useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 
 export default function Footer() {
   const navigate = useNavigate();
 
-  
+
   return (
     <footer className="bg-gray-300 text-black">
       <div className="container mx-auto px-4 py-8">
@@ -39,7 +39,7 @@ export default function Footer() {
                   </button>
                 </a>
               </li>
-             <li>
+              <li>
                 <a>
                   <button
                     className="hover:text-gray-800 border-b-2 border-transparent hover:border-red-500"
@@ -89,6 +89,26 @@ export default function Footer() {
               <a href="https://www.instagram.com/kibzar_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" className="hover:text-red-400">
                 <Instagram size={24} />
               </a>
+              <a
+                href="https://www.tiktok.com/@kibzar"
+                className="hover:text-red-400"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {/* Paste your SVG here */}
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="currentColor">
+                  <path d="M..." />
+                </svg>
+              </a>
+
+            </div>
+            <div className="flex flex-col items-start mt-4">
+              <img
+                src="/andriod-qr.png"
+                alt="Download Kibzar Android App QR"
+                className="w-24 h-24 mb-2 "
+              />
+              <span className="text-xs text-gray-700">Android App Only</span>
             </div>
           </div>
         </div>

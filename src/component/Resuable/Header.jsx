@@ -47,7 +47,7 @@ export default function Header() {
 
     if (/android/i.test(userAgent)) {
       // Navigate to Play Store for Android users
-      window.location.href = "https://play.google.com/store";
+      window.location.href = "https://play.google.com/store/apps/details?id=com.kibzar.kibzar";
     } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
       // Navigate to Apple Store for iOS users
       window.location.href = "https://apps.apple.com";

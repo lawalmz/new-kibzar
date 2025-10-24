@@ -3,6 +3,8 @@ import React, { useState, useEffect } from 'react';
 import { useLocation, useNavigate, useParams } from 'react-router-dom';
 import { doc, getDoc } from 'firebase/firestore';
 import { db } from '../../firebase'; // Adjust if necessary
+import { toast } from 'react-toastify'; // Import toast
+
 
 function ListingDetails() {
   const location = useLocation();
@@ -12,6 +14,7 @@ function ListingDetails() {
   const [mainImage, setMainImage] = useState(null);
   const [showAllImages, setShowAllImages] = useState(false);
   const [loading, setLoading] = useState(true);
+  
 
   // Fetch listing if accessed via direct link
   useEffect(() => {
@@ -75,11 +78,11 @@ useEffect(() => {
     const userAgent = navigator.userAgent || navigator.vendor || window.opera;
 
     if (/android/i.test(userAgent)) {
-      window.location.href = "https://play.google.com/store";
+      window.location.href = "https://play.google.com/store/apps/details?id=com.kibzar.kibzar";
     } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
       window.location.href = "https://apps.apple.com";
     } else {
-      window.location.href = "https://www.google.com/search?q=messi";
+      toast.error("You can only chat using the Kibzar app. Please download our app to use chat.");
     }
   };
 
