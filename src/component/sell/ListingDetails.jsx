@@ -157,7 +157,7 @@ useEffect(() => {
           <h2 className="text-3xl mb-4">{listing.category}</h2>
           <p className="text-gray-600 mb-2 font-medium text-lg">{listing.location}</p>
           <p className="text-red-500 text-2xl font-semibold mb-6">
-            {listing.price} {listing.currency}
+              {Number(listing.price).toLocaleString()} {listing.currency}
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

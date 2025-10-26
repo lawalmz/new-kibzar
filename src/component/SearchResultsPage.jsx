@@ -182,7 +182,7 @@ function SearchResults() {
                     <h1 className="text-lg font-semibold text-xl mt-2">{listing.title}</h1>
                     <p className="text-gray-600 text-base mt-2">{listing.description}</p>
                     <p className="text-gray-600 font-semibold text-xl ">
-                      {listing.currency} {listing.price}
+                      {listing.currency}   {Number(listing.price).toLocaleString()}
                     </p>
     
                     <p className="text-gray-500 text-xs mt-1">

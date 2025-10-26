@@ -13,7 +13,7 @@ export default function FeaturedListings() {
         const q = query(collection(db, 'posts'), orderBy('timestamp', 'desc'), limit(10)); // Use timestamp instead of datePosted
         const querySnapshot = await getDocs(q);
         const fetchedListings = querySnapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
-       
+
         setListings(fetchedListings);
       } catch (error) {
         console.error('Error fetching listings:', error);
@@ -51,9 +51,11 @@ export default function FeaturedListings() {
                 <h3 className="font-semibold mb-1 text-sm md:text-base truncate">
                   {listing.title}
                 </h3>
-               <p className="text-red-600 font-bold text-lg">{listing.price} {listing.currency}</p>
+                <p className="text-red-600 font-bold text-lg">
+                  {Number(listing.price).toLocaleString()} {listing.currency}
+                </p>
                 <div className="text-gray-600 text-xs md:text-sm mt-2">
-                  
+
                   <span>{listing.year}</span>
                 </div>
                 <p className="text-gray-500 text-xs mt-1">
