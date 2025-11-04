@@ -1,4 +1,5 @@
-import { Facebook, Twitter, Instagram } from 'lucide-react';
+import { Facebook, Instagram } from 'lucide-react';
+import { FaTiktok } from "react-icons/fa";
 import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 
@@ -80,36 +81,53 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-semibold mb-4">Follow Us</h3>
             <div className="flex space-x-4">
-              <a href="#" className="hover:text-red-400">
+              <a href="https://www.facebook.com/share/1BHmJpauvN/?mibextid=wwXIfr" className="hover:text-red-400">
                 <Facebook size={24} />
               </a>
-              <a href="#" className="hover:text-red-400">
-                <Twitter size={24} />
+              <a href="https://www.tiktok.com/@kibzarr?_r=1&_t=ZS-917Wd7y6b4C" className="hover:text-red-400">
+                <FaTiktok size={24} />
               </a>
-              <a href="https://www.instagram.com/kibzar_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" className="hover:text-red-400">
+              <a href="https://www.instagram.com/kibzarr?igsh=MW8yMjcwcnZrcXcwYg%3D%3D&utm_source=qr" className="hover:text-red-400">
                 <Instagram size={24} />
               </a>
-              <a
-                href="https://www.tiktok.com/@kibzar"
-                className="hover:text-red-400"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {/* Paste your SVG here */}
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="currentColor">
-                  <path d="M..." />
-                </svg>
-              </a>
+            
 
             </div>
-            <div className="flex flex-col items-start mt-4">
-              <img
-                src="/andriod-qr.png"
-                alt="Download Kibzar Android App QR"
-                className="w-24 h-24 mb-2 "
-              />
-              <span className="text-xs text-gray-700">Android App Only</span>
-            </div>
+            <div className="flex flex-col items-start mt-2">
+  {/* Android Button */}
+  <div className="mb-0.5"> {/* small space between the buttons */}
+    <button
+      onClick={() =>
+        window.open(
+          "https://play.google.com/store/apps/details?id=com.kibzar.kibzar",
+          "_blank"
+        )
+      }
+      className="focus:outline-none"
+      style={{ padding: 0, border: "none", background: "none" }}
+    >
+      <img src="/A.png" alt="Play Store" className="w-40 h-40" />
+    </button>
+  </div>
+
+  {/* iOS Button */}
+  <div style={{ marginTop: "-50px" }}>
+    <button
+      onClick={() =>
+        window.open(
+          "https://apps.apple.com/ca/app/kibzar/id6754494974",
+          "_blank"
+        )
+      }
+        className="focus:outline-none -mt-12"
+      style={{ padding: 0, border: "none", background: "none" }}
+    >
+      <img src="/I.png" alt="App Store" className="w-40 h-40" />
+    </button>
+  </div>
+</div>
+
+
           </div>
         </div>
         <div className="text-xs text-gray-600 mt-4 text-center">
