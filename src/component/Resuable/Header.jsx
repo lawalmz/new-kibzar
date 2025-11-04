@@ -50,7 +50,7 @@ export default function Header() {
       window.location.href = "https://play.google.com/store/apps/details?id=com.kibzar.kibzar";
     } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
       // Navigate to Apple Store for iOS users
-      window.location.href = "https://apps.apple.com";
+      window.location.href = "https://apps.apple.com/ca/app/kibzar/id6754494974";
     } else {
       // Default fallback (e.g., desktop users)
       toast.info("This feature is only available on the mobile app. Scan the QR code to download.");
