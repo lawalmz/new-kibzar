@@ -110,7 +110,7 @@ export default function Footer() {
       src="/A.jpeg"
       alt="Play Store"
       style={{
-        width: "110px",
+        width: "150px",
         height: "auto",
         display: "block",
         margin: 0,
@@ -135,7 +135,7 @@ export default function Footer() {
       src="/I.jpeg"
       alt="App Store"
       style={{
-        width: "110px",
+        width: "150px",
         height: "auto",
         display: "block",
         margin: 0,
