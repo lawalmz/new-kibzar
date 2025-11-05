@@ -94,37 +94,58 @@ export default function Footer() {
 
             </div>
             <div className="flex flex-col items-start mt-2">
+  <div className="flex flex-col items-center" style={{ lineHeight: 0 }}>
   {/* Android Button */}
-  <div className="mb-0.5"> {/* small space between the buttons */}
-    <button
-      onClick={() =>
-        window.open(
-          "https://play.google.com/store/apps/details?id=com.kibzar.kibzar",
-          "_blank"
-        )
-      }
-      className="focus:outline-none"
-      style={{ padding: 0, border: "none", background: "none" }}
-    >
-      <img src="/A.png" alt="Play Store" className="w-40 h-30" style={{ marginTop: "20px" }} />
-    </button>
-  </div>
+  <button
+    onClick={() =>
+      window.open(
+        "https://play.google.com/store/apps/details?id=com.kibzar.kibzar",
+        "_blank"
+      )
+    }
+    className="focus:outline-none"
+    style={{ padding: 0, margin: 0, border: "none" }}
+  >
+    <img
+      src="/A.jpeg"
+      alt="Play Store"
+      style={{
+        width: "110px",
+        height: "auto",
+        display: "block",
+        margin: 0,
+        padding: 0,
+        objectFit: "contain",
+      }}
+    />
+  </button>
 
   {/* iOS Button */}
-  <div style={{ marginTop: "20px" }}>
-    <button
-      onClick={() =>
-        window.open(
-          "https://apps.apple.com/ca/app/kibzar/id6754494974",
-          "_blank"
-        )
-      }
-        className="focus:outline-none -mt-12"
-      style={{ padding: 0, border: "none", background: "none" }}
-    >
-      <img src="/I.png" alt="App Store" className="w-40 h-40" style={{ marginTop: "-50px" }} />
-    </button>
-  </div>
+  <button
+    onClick={() =>
+      window.open(
+        "https://apps.apple.com/ca/app/kibzar/id6754494974",
+        "_blank"
+      )
+    }
+    className="focus:outline-none"
+    style={{ padding: 0, marginTop: "4px", border: "none" }}
+  >
+    <img
+      src="/I.jpeg"
+      alt="App Store"
+      style={{
+        width: "110px",
+        height: "auto",
+        display: "block",
+        margin: 0,
+        padding: 0,
+        objectFit: "contain",
+      }}
+    />
+  </button>
+</div>
+
 </div>
 
 
