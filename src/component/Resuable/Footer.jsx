@@ -106,12 +106,12 @@ export default function Footer() {
       className="focus:outline-none"
       style={{ padding: 0, border: "none", background: "none" }}
     >
-      <img src="/A.png" alt="Play Store" className="w-40 h-40" />
+      <img src="/A.png" alt="Play Store" className="w-40 h-30" style={{ marginTop: "20px" }} />
     </button>
   </div>
 
   {/* iOS Button */}
-  <div style={{ marginTop: "-50px" }}>
+  <div style={{ marginTop: "20px" }}>
     <button
       onClick={() =>
         window.open(
@@ -122,7 +122,7 @@ export default function Footer() {
         className="focus:outline-none -mt-12"
       style={{ padding: 0, border: "none", background: "none" }}
     >
-      <img src="/I.png" alt="App Store" className="w-40 h-40" />
+      <img src="/I.png" alt="App Store" className="w-40 h-40" style={{ marginTop: "-50px" }} />
     </button>
   </div>
 </div>
