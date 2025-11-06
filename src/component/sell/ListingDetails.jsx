@@ -80,7 +80,7 @@ useEffect(() => {
     if (/android/i.test(userAgent)) {
       window.location.href = "https://play.google.com/store/apps/details?id=com.kibzar.kibzar";
     } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
-      window.location.href = "https://apps.apple.com";
+      window.location.href = "https://apps.apple.com/ca/app/kibzar/id6754494974";
     } else {
       toast.error("You can only chat using the Kibzar app. Please download our app to use chat.");
     }
