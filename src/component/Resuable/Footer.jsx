@@ -151,10 +151,7 @@ export default function Footer() {
 
           </div>
         </div>
-        <div className="text-xs text-gray-600 mt-4 text-center">
-          Built by Muazu Lawal Lawal & Aimen Alamin
-
-        </div>
+        
         <div className="mt-8 text-center text-xs md:text-sm">
           © {new Date().getFullYear()} Kibzar North Cyprus. All rights reserved.
         </div>
