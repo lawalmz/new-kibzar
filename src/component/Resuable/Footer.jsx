@@ -59,7 +59,7 @@ export default function Footer() {
                     className="hover:text-gray-800 border-b-2 border-transparent hover:border-red-500"
                     onClick={() => {
                       window.scrollTo(0, 0);
-                      navigate(`/Privacy-policy`);
+                      navigate(`/privacy-policy`);
                     }}
                   >
                     Privacy Policy

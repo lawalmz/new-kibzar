@@ -15,6 +15,10 @@ export default function FeaturedListings() {
         const fetchedListings = querySnapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
 
         setListings(fetchedListings);
+
+
+
+
       } catch (error) {
         console.error('Error fetching listings:', error);
       }
@@ -36,12 +40,15 @@ export default function FeaturedListings() {
             >
               {listing.imageUrl && listing.imageUrl.length > 0 ? (
                 <img
-                  src={listing.imageUrl[0]} // Use images instead of imageUrl
+                  src={listing.imageUrl[0]}
                   alt={listing.title}
                   width={300}
                   height={200}
                   className="w-full h-56 object-cover"
+                  onLoad={() => console.log("✅ IMAGE LOADED:", listing.imageUrl[0])}
+                  onError={(e) => console.log("❌ IMAGE FAILED:", listing.imageUrl[0], e)}
                 />
+
               ) : (
                 <div className="w-full h-56 bg-gray-200 flex items-center justify-center">
                   No Image Available
